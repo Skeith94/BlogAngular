@@ -1,0 +1,4 @@
+.paragrafo{
+    display:flex;
+    justify-content: space-between;
+}

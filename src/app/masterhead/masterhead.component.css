@@ -1,0 +1,11 @@
+
+    .masthead{
+      height: 500px;
+    }
+    
+    .masthead img {
+      position: relative;
+      top: -190px;
+      justify-content: center;
+    }
+  
