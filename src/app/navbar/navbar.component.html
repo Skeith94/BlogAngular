@@ -10,13 +10,20 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link pointer" routerLink="home">Home</a>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-dark" id="dropdownBasic1" ngbDropdownToggle>Menu</button>
+            <div class="drop" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem >Login</button>
+              <button ngbDropdownItem >Post</button>
+              <button ngbDropdownItem [disabled]="true">Ban danilo</button>
+            </div>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link pointer" routerLink="about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link pointer" routerLink="posts">Posts</a>
+         
         </li>
         <li class="nav-item">
           <a class="nav-link pointer" routerLink="contact">Contact</a>

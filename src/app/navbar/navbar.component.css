@@ -4,3 +4,74 @@
     background-color: white;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+.btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+.btn-dark {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+.btn {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 18px 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 1000px){
+    .btn{
+    color:gray;
+    padding: 18px 0px;
+    }
+    }
+
+    @media (max-width: 1000px){
+    .btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle {
+        color: gray;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+    .drop{
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: transparent;
+        font-size:  25px;
+        font-weight: 800;
+    }
+
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 0.25rem 1.5rem;
+        clear: both;
+        font-weight: 400;
+        color: white;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+    }
+
+    @media (max-width: 1000px){
+        .dropdown-item {
+            display: block;
+            width: 100%;
+            padding: 0.25rem 1.5rem;
+            clear: both;
+            font-weight: 400;
+            color: gray;
+            text-align: inherit;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+        }
+        }
