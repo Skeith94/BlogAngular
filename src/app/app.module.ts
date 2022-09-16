@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AuthComponent } from './auth/auth.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RegistrazioneComponent } from './registrazione/registrazione.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     LoadingComponent,
     AuthComponent,
+    RegistrazioneComponent,
   ],
   imports: [
     BrowserModule,

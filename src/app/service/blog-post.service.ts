@@ -29,8 +29,8 @@ export class BlogPostService {
   }
 
   
-  public CreatePost(post: BlogPreview): Observable<any> {
-    return this.apiService.Post(environment.api.entries, post);
+  public CreatePost(post: BlogPreview,urlentries:string): Observable<any> {
+    return this.apiService.Post(urlentries, post);
   }
 
   public deletePost(id) {

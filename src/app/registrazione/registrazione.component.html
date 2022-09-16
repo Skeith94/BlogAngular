@@ -1,0 +1,87 @@
+<!-- Main Content -->
+<div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <H1>REGISTRATI</H1>
+      <div class="alert alert-danger" *ngIf="error">
+        <p>{{ error }}</p>
+      </div>
+
+      <app-loading *ngIf="loading"></app-loading>
+      <div class="row" *ngIf="!loading">
+    </div>
+      <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!loading">
+
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label>nome</label>
+            <input 
+            type="text" 
+            id="nome"
+            class="form-control" 
+            ngModel
+            name="nome" 
+            required 
+            username  
+            placeholder="Nome" 
+           >
+            <p class="help-block text-danger"></p>
+          </div>
+        </div>
+        <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>username</label>
+              <input 
+              type="text" 
+              id="username"
+              class="form-control" 
+              ngModel
+              name="username" 
+              required 
+              username  
+              placeholder="Username" 
+              />
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>email</label>
+              <input 
+              type="email" 
+              id="email"
+              class="form-control" 
+              ngModel
+              name="email" 
+              required 
+              username  
+              placeholder="Email" 
+              />
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Password</label>
+              <input 
+              type="password"
+              id="password"
+              class="form-control"
+              ngModel
+              name="password"
+              required
+              minlength="4"
+              class="form-control" placeholder="Password" id="password" required
+              />
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        <br>
+        <br>
+        <div id="success"></div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Registrati</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
