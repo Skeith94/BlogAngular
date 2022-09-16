@@ -36,4 +36,5 @@ export class BlogPostService {
   public deletePost(id) {
     return this.apiService.Delete(environment.api.entries + "/" + id);
   }
+
 }
