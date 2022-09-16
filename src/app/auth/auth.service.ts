@@ -9,18 +9,17 @@ import { provideCloudinaryLoader, provideImageKitLoader } from '@angular/common'
 import { HttpClient, HttpHeaders, HttpParams, HttpResponse} from '@angular/common/http';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import { Tokens } from '../models/Tokens';
-import { Token } from '@angular/compiler';
 
 
 
 
 const API_URL = environment.api.base;
+let prova;
 
 @Injectable({providedIn:'root'})
 export class AuthService {
      
-    private loginUrl = 'api/login';
-    private headers = new Headers({'Content-Type': 'application/json'});
+ 
      
      constructor(private http:HttpClient,private router: Router,private apiService: ApiService) {
     
@@ -30,25 +29,22 @@ export class AuthService {
 
     public login(username:string,password:string) {
         
-          let token:Token;
+      
             var loginUrl = "http://localhost:8080/api/login";
             this.http.get(loginUrl, {withCredentials: true});
-             this.http.post( loginUrl,{"username":username, "password":password},{withCredentials: true,})
-            .subscribe(
-              res => {
-            console.log(res);
-              return res
-              }, err => {
-                console.log(err);
-              }
-            )
-          }
+            return this.http.post( loginUrl,{"username":username, "password":password},{withCredentials: true,})
+            
+           
+            
+            
           
     }
 
 
+
    
 
+  }
 
 
   
